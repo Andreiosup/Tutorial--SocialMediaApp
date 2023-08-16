@@ -69,7 +69,7 @@ const WaveCard = ({
 
                         <p className='mt-2 text-small-regular text-light-2'>{content}</p>
 
-                        <div className={`${isComment && "mb-10"} mt-5 flex  gap-3`}>
+                        <div className=" mt-5 flex  gap-3">
                             <LikeWave
                                 likes={likes}
                                 waveId={id}
@@ -104,9 +104,12 @@ const WaveCard = ({
                                 isComment={isComment}
                             />
                         </div>
-                        <p className='mt-5 text-subtle-medium text-gray-1 '>
-                            {formatDateString(createdAt)}
-                        </p>
+                        <div className={`${isComment && "mb-10"} mt-5`}>
+
+                            <p className=' text-subtle-medium text-gray-1 '>
+                                {formatDateString(createdAt)}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
