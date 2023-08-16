@@ -93,13 +93,9 @@ const WaveCard = ({
                                 </p>
                             ) : (
                                 <p className="mt-1 text-subtle-medium text-gray-1">
-                                    No replies yet
+                                    No replies
                                 </p>
                             )}
-                            <p className='text-subtle-medium text-gray-1 mt-1'>
-                                {formatDateString(createdAt)}
-                                {community && ` - ${community.name} Community`}
-                            </p>
                             <DeleteWave
                                 threadId={JSON.stringify(id)}
                                 currentUserId={currentUserId}
@@ -108,6 +104,9 @@ const WaveCard = ({
                                 isComment={isComment}
                             />
                         </div>
+                        <p className='mt-5 text-subtle-medium text-gray-1 '>
+                            {formatDateString(createdAt)}
+                        </p>
                     </div>
                 </div>
             </div>

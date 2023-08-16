@@ -44,11 +44,11 @@ const Page = async () => {
                         </span>{" "}
                         replied to you
                       </p>
-                      <p className='!text-small-regular text-gray-500'>
+                      <p className='max-[600px]:hidden !text-small-regular text-gray-500'>
                         {activity.text.slice(0, 30)}...
                       </p>
                     </div>
-                    <p className='text-small-regular text-white'>
+                    <p className=' text-small-regular text-white'>
                       {formatDateString(activity.createdAt)}
                     </p>
                   </div>

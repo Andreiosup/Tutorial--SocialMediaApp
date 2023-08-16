@@ -76,7 +76,7 @@ function Comment({ waveId, currentUserImg, currentUserId }: Props) {
           )}
         />
 
-        <Button type='submit' className="bg-orange-500">
+        <Button type='submit'  className='comment-form_btn'>
           Reply
         </Button>
       </form>
