@@ -4,7 +4,6 @@ import { Inter } from 'next/font/google'
 import { dark } from "@clerk/themes";
 import Topbar from '@/components/shared/Topbar';
 import LeftSidebar from '@/components/shared/LeftSidebar';
-import RightSidebar from '@/components/shared/RightSidebar';
 import Bottombar from '@/components/shared/Bottombar';
 
 const inter = Inter({ subsets: ['latin'] })
