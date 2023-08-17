@@ -32,6 +32,7 @@ const ProfilePage = async ({params} :{params: {id: string}}) => {
         imgUrl={paramsUser.image}
         bio={paramsUser.bio}
       /> 
+
       <div className="mt-9">
         <WavesTab
           currentUserId={clerkUser.id}
@@ -39,6 +40,8 @@ const ProfilePage = async ({params} :{params: {id: string}}) => {
           accountType='User'
         />
       </div>
+
+      
           
     </section>
   )
